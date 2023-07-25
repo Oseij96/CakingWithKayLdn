@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-nNw5QU5D4unz+IrhFBvUcx1zEylLcM7ohsnKaiTTXq6Jl3zA4gnvbc5hjfoKuX+R0CFaFODmZcS9N3ET6vAOg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md" style="background-color: #FFE8F1;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img class="logo" src="images/logo.png" alt="" width="150" height="150">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search" id="search-form">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                        id="search-input">
+                    <button class="btn btn-outline-info" type="submit" id="search-button">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container-fluid my-5" id="product1" data-search-key="brownies, brownie">
+        <h1 class="display-3 fw-bolder text-center text-dark">Explore Our Products</h1>
+
+        <div class="text-info">
+            <hr>
+        </div>
+
+        <div class="row my-5">
+            <div class="col-12 col-md-6">
+                <h5 class="text-center fw-bold my-5 display-6">Brownies</h5>
+                <p class="lead text-center fw-semibold">
+                    Indulge in the heavenly delight of our White Chocolate Chip
+                    Brownies! These delectable treats offer the perfect blend of rich, <br> fudgy brownie goodness and
+                    creamy white chocolate chips that melt in your mouth with every bite. Each brownie is carefully
+                    crafted to
+                    deliver a delightful contrast of flavors and textures, <br> leaving you craving for more. Whether
+                    you enjoy them with a cup of coffee or as a sweet dessert after a meal, <br> our White Chocolate
+                    Chip
+                    Brownies are guaranteed to satisfy your sweet tooth and become your new favorite guilty pleasure.
+                </p>
+            </div>
+            <div class="col-12 col-md-6">
+                <img class="img-fluid shadow mb-5" src="images/brownie.avif" alt="" id="brownie">
+            </div>
+        </div>
+    </section>
+
+    <div class="text-info">
+        <hr>
+    </div>
+
+    <section class="container-fluid my-5" id="product2" data-search-key="birthday cake">
+        <div class="container-fluid row my-5">
+            <h5 class="text-center fw-bold my-5 display-6">Birthday Cake</h5>
+            <div class="col-12 col-md-3">
+                <img class="img-fluid shadow mb-5" src="images/birthday-cake.jpeg" alt="" id="birthday-cake">
+            </div>
+
+            <div class="col-12 col-md-6">
+                <p class="lead text-center fw-semibold mt-3">
+                    Make your special day even more memorable with our
+                    Customizable Birthday Cakes! We take great pride in creating personalized masterpieces that
+                    perfectly reflect your unique style and taste. From elegant designs adorned with delicate flowers to
+                    fun and colorful themes that capture the essence of your celebration, our expert bakers and
+                    decorators will work closely with you to bring your vision to life. Choose from a variety of
+                    mouthwatering cake flavors, fillings, and frostings to create a truly one-of-a-kind cake that will
+                    be the centerpiece of your joyous occasion. Whether you're celebrating a milestone birthday or a
+                    joyous moment with loved ones, our Customizable Birthday Cakes will add a touch of sweetness to your
+                    cherished memories.</p>
+            </div>
+            <div class="col-12 col-md-3">
+                <img class="img-fluid shadow mb-5" src="images/birthday-cake-2.jpeg" alt="" id="birthday-cake">
+            </div>
+        </div>
+    </section>
+
+    <div class="text-info">
+        <hr>
+    </div>
+
+    <section class="container-fluid my-5" id="product3" data-search-key="kay's oreo cups, kay's carrot cups, kay's chocolate cups, 
+        kay's easter cups, kay's vanilla cups, cupcakes, oreo, oreos, oreo cupcakes,
+         oreo cupcake, carrot, carrot cup cakes, biscoff, biscoff cupcake, vanilla cups,
+         easter cups">
+        <h5 class="display-6 fw-bold text-center mb-5">Kay's CupCakes</h2>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel"
+                data-bs-interval="5000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <div class="image-wrapper">
+                            <img src="images/oreo-cupcake.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="display-6">Kay's Oreo Cups</h5>
+                            <p class="lead fw-semibold text-light"> Indulge in the irresistible fusion of moist chocolate
+                                cupcakes blended with crushed Oreo
+                                cookies, topped with a luscious cream cheese frosting and a whole Oreo cookie for the
+                                ultimate Oreo lover's delight.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <div class="image-wrapper">
+                            <img src="images/carrot-cake.jpeg" class="d-block w100" alt="...">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="display-6">Kay's Carrot Cups</h5>
+                            <p class="lead fw-semibold text-light">Experience the heavenly combination of tender carrot cake
+                                cupcakes infused with warm
+                                spices, crowned with velvety cream cheese frosting and a sprinkle of chopped nuts for a
+                                delightful texture.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <div class="image-wrapper">
+                            <img src="images/chocolate-cups.jpg" class="d-block w100" alt="...">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="display-6">Kay's Chocolate Cups</h5>
+                            <p class="lead fw-semibold text-light">Dive into decadence with our rich chocolate cupcakes,
+                                topped with velvety chocolate
+                                frosting and an indulgent chocolate drizzle, a chocolate lover's dream come true.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <div class="image-wrapper">
+                            <img src="images/biscoff-cups.jpg" class="d-block w100" alt="...">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="display-6">Kay's Biscoff Cups</h5>
+                            <p class="lead fw-semibold text-light">Experience pure bliss with our Biscoff Cups! Specially
+                                baked with the exquisite flavor of
+                                Biscoff cookies, crowned with a dreamy Biscoff buttercream, and a Biscoff cookie on top.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <div class="image-wrapper">
+                            <img src="images/easter-cups.jpg" class="d-block w100" alt="...">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="display-6">Kay's Easter Cups</h5>
+                            <p class="lead fw-semibold text-light"> Embrace the spirit of the season with our limited edition
+                                Easter Cups! These charming
+                                cupcakes feature delightful pastel colors, festive sprinkles, and a burst of delightful
+                                flavors to celebrate Easter in style.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <div class="image-wrapper">
+                            <img src="images/vanilla-cups.jpg" class="d-block w100" alt="...">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="display-6">Kay's Vanilla Cups</h5>
+                            <p class="lead fw-semibold text-light"> For the classic connoisseurs, savor the simplicity of our
+                                vanilla cupcakes, light and
+                                airy, adorned with smooth vanilla buttercream, a timeless treat for every occasion.
+                            </p>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+    </section>
+
+    <div class="text-center d-flex justify-content-center my-4">
+        <a href="contact.html" class="btn btn-primary btn-lg">Order Now...</a>
+    </div>
+
+    <div class="text-info">
+        <hr>
+    </div>
+
+    <footer class="footer" style="background-color: #FFE8F1;">
+        <div class="container text-center">
+            <p class="text-dark">&copy; 2023 CakingWithKayLdn. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/cakingwithkayldn/" class="instagram-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/1bd67f6019.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
