@@ -6,7 +6,7 @@ CakingWithKayLdn is a website I made for my 14 year old niece's cake business. I
 
 ## Live Demo
 
-https://oseij96.github.io/CakingWithKayLdn/
+https://cakingwithkayldn.netlify.app/
 
 ## Features
 
