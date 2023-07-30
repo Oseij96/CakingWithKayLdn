@@ -12,12 +12,38 @@ document.getElementById("contactForm").addEventListener("submit", function (even
             }
         }
     } else {
-        contactForm.reset();
-        const successMessage = document.getElementById("successMessage");
-        successMessage.classList.remove("d-none");
-        successMessage.textContent = "Your message has been sent!";
-        setTimeout(function () {
-            successMessage.classList.add("d-none");
-        }, 3000);
+        const formData = new FormData(contactForm); 
+        const data = {};
+        formData.forEach((value, key) => {
+            data[key] = value;
+        });
+
+        
+        axios({
+            url: 'https://formspree.io/f/meqbowqo',
+            method: 'post',
+            headers: {
+                'Accept': 'application/json'
+            },
+            data: data
+        }).then((response) => {
+            console.log(response);
+            contactForm.reset();
+            const successMessage = document.getElementById("successMessage");
+            successMessage.classList.remove("d-none");
+            successMessage.textContent = "Your message has been sent!";
+            setTimeout(function () {
+                successMessage.classList.add("d-none");
+            }, 3000);
+        }).catch((error) => {
+            // Handle the error if the request fails
+            console.error('Error submitting the form:', error);
+        });
     }
 });
+
+
+
+
+
+
